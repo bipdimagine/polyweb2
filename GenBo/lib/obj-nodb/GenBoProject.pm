@@ -1984,6 +1984,7 @@ has genomeFai => (
 			next if $chr =~ /^GL/;
 			next if $chr =~ /^hs37d5/;
 			next if $chr =~ /^NC_007605/;
+			next if $chr =~ /^KI/;
 			$chrfai->{id}                 = $chr;
 			$chrfai->{name}               = $chr;
 			$chrfai->{fasta_name}         = $ochr;
